@@ -9,6 +9,7 @@ class School
     roster[level] ||= []
     roster[level] << student
   end
+  
   def sort 
   new_hash = {}
   roster.each do |x, y| 
@@ -18,6 +19,7 @@ class School
 end 
 end 
 school = School.new("Bayside High School")
-school.roster 
 school.add_student("Zach Morris", 9)
+school.add_student("Kelly Kapowski", 10)
+school.add_student("Screech", 11)
 school.roster
